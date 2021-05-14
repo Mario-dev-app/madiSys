@@ -1,11 +1,18 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { InicioComponent } from './inicio/inicio.component';
+import { MatriculaComponent } from './matricula/matricula.component';
+import { AlumnoComponent } from './alumno/alumno.component';
+import { HorarioComponent } from './horario/horario.component';
+import { ReporteComponent } from './reporte/reporte.component';
 
 
 const routes: Routes = [
-  { path: '', component: InicioComponent }
+  { path: '', component: MatriculaComponent},
+  { path: 'alumno', component: AlumnoComponent},
+  { path: 'horario', component: HorarioComponent},
+  { path: 'reporte', component: ReporteComponent},
+  { path: '**', pathMatch: 'full', redirectTo: '/'}
 
   //{ path: 'path/:routeParam', component: MyComponent },
   //{ path: 'staticPath', component: ... },

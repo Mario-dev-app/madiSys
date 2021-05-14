@@ -1,0 +1,112 @@
+<h4>Registra una nueva matrícula</h4>
+<hr />
+<form>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="documento" class="form-label">N° de Documento</label>
+        <input type="text" class="form-control" id="documento" />
+      </div>
+
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" />
+      </div>
+
+      <div class="mb-3">
+        <label for="fechaPago" class="form-label">Fecha de pago</label>
+        <input type="date" class="form-control" id="fechaPago" />
+      </div>
+
+      <div class="mb-3">
+        <label for="inicioClases" class="form-label">Inicio de clases</label>
+        <input type="date" class="form-control" id="inicioClases" />
+      </div>
+
+      <div class="mb-3">
+        <label for="monto" class="form-label">Monto cancelado</label>
+        <input type="number" class="form-control" id="monto" />
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="tipo" class="form-label">Tipo de clase</label>
+        <select class="form-select" id="tipo">
+          <option selected>Seleccionar</option>
+          <option value="1">Intermedio</option>
+          <option value="2">Básico</option>
+          <option value="3">Adultos</option>
+          <option value="4">Particular</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="dias" class="form-label">Cantidad de clases</label>
+        <select class="form-select" id="dias">
+          <option selected>Seleccionar</option>
+          <option value="1">4</option>
+          <option value="2">8</option>
+          <option value="3">12</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="tipoPago" class="form-label">Tipo de pago</label>
+        <select class="form-select" id="tipoPago">
+          <option selected>Seleccionar</option>
+          <option value="1">Depósito</option>
+          <option value="2">Yape</option>
+          <option value="3">PayU</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="finClases" class="form-label">Fin de clases</label>
+        <input type="date" class="form-control" id="finClases" />
+      </div>
+
+      <div class="mb-3">
+        <label for="obs" class="form-label">Observación</label>
+        <textarea class="form-control" placeholder="Ingresa aquí un comentario" id="obs"></textarea>
+      </div>
+    </div>
+  </div>
+</form>
+
+<div class="row">
+  <div class="col-12">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Alumno</th>
+            <th>Tipo de clase</th>
+            <th>Cantidad de clases</th>
+            <th>Fecha de pago</th>
+            <th>Tipo de pago</th>
+            <th>Monto</th>
+            <th>Inicio de clases</th>
+            <th>Fin de clases</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mario Peralta</td>
+            <td>Intermedio</td>
+            <td>4</td>
+            <td>01/05/2021</td>
+            <td>PayU</td>
+            <td>150</td>
+            <td>01/05/2021</td>
+            <td>31/05/2021</td>
+            <td>
+              <button class="btn btn-primary">Registrar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

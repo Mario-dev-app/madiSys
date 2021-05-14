@@ -1,0 +1,59 @@
+<h4>Búsqueda de reportes de matrículas</h4>
+<hr />
+<div class="row mb-3">
+  <div class="col">
+    <label for="fechaInicioRep" class="form-label">Fecha inicio</label>
+    <input
+      type="date"
+      class="form-control"
+      placeholder="First name"
+      id="fechaInicioRep"
+    />
+  </div>
+  <div class="col">
+    <label for="fechaFinRep" class="form-label">Fecha fin</label>
+    <input
+      type="date"
+      class="form-control"
+      placeholder="Last name"
+      id="fechaFinRep"
+    />
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Alumno</th>
+        <th>Padre o apoderado</th>
+        <th>Tipo de clase</th>
+        <th>Cantidad de clases</th>
+        <th>Fecha de pago</th>
+        <th>Tipo de pago</th>
+        <th>Monto</th>
+        <th>Inicio de clases</th>
+        <th>Fin de clases</th>
+        <th>Observaciones</th>
+        <th>Editar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mario Peralta Westreicher</td>
+        <td>-</td>
+        <td>Intermedio</td>
+        <td>4</td>
+        <td>14/05/2021</td>
+        <td>PayU</td>
+        <td>150</td>
+        <td>01/05/2021</td>
+        <td>31/05/2021</td>
+        <td></td>
+        <td>
+          <button class="btn btn-primary"><i class="fas fa-edit"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<button class="btn btn-success mt-3"><i class="fas fa-file-excel"></i> Exportar a Excel</button>
