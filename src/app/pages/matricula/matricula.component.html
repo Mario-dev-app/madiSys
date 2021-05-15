@@ -4,13 +4,29 @@
   <div class="row">
     <div class="col-md-6">
       <div class="mb-3">
-        <label for="documento" class="form-label">N° de Documento</label>
-        <input type="text" class="form-control" id="documento" />
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" />
       </div>
 
       <div class="mb-3">
-        <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" />
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mario</td>
+              <td>Peralta Westreicher</td>
+              <td>
+                <button class="btn btn-primary"><i class="fas fa-plus"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="mb-3">
@@ -48,6 +64,16 @@
           <option value="1">4</option>
           <option value="2">8</option>
           <option value="3">12</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="dias" class="form-label">Días</label>
+        <select class="form-select" id="dias">
+          <option selected>Seleccionar</option>
+          <option value="1">Miércoles</option>
+          <option value="2">Viernes</option>
+          <option value="3">Sábado</option>
         </select>
       </div>
 

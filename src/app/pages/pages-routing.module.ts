@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: '', component: MatriculaComponent},
   { path: 'alumno', component: AlumnoComponent},
   { path: 'horario', component: HorarioComponent},
-  { path: 'reporte', component: ReporteComponent},
-  { path: '**', pathMatch: 'full', redirectTo: '/'}
+  { path: 'reporte', component: ReporteComponent}
+  /* { path: '**', pathMatch: 'full', redirectTo: '/'} */
 
   //{ path: 'path/:routeParam', component: MyComponent },
   //{ path: 'staticPath', component: ... },
